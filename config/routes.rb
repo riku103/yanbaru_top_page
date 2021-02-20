@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'static_pages/index'
+  root to:"static_pages#index"
+  resources :static_pages , only: :index
 end
